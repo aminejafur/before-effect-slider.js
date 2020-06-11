@@ -21,11 +21,18 @@ Start by including `before-effect-slider.js` and `before-effect-slider.css` or t
 
 ## Usage & Customization
 
-Start by creating a div in which you want to wrap the Slider, make sure to add the class or id that will be used by the plugin to build the Slider.
+Create the div in which you want to wrap the Slider, make sure to add the class or id that will be used by the plugin to build the Slider.
 
 Default Selector is `#beforeEffectslider`
 ```html
 <div id="beforeEffectslider"></div>
+```
+Then call the Plugin using :
+
+```js
+// Default usage with beforeEffectslider ID as selector
+
+beforeEffectslider();
 ```
 
 Or you can initiate Before Effect Slider with the following options :
