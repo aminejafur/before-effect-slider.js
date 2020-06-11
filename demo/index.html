@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Before Effect Slider V 1.0 By Amine Jafur</title>
+  <link rel="stylesheet" type="text/css" href="../before-effect-slider.css">
+</head>
+
+<style type="text/css">
+  body{
+    margin: 150px
+  }
+  h1{
+    text-align: center;
+  }
+</style>
+
+<body>
+
+<h1>Default usage</h1>
+<div id="beforeEffectslider"></div>
+
+<h1>Defined usage</h1>
+<div id="definedID"></div>
+
+<div class="dogs"></div>
+
+</body>
+
+<script type="text/javascript" src="../before-effect-slider.js"></script>
+<script type="text/javascript">
+
+// Default usage with parentNodeBorder ClassName
+
+beforeEffectslider();
+
+// Defined usage with params
+
+// #ID
+beforeEffectslider({
+  Selector: "#definedID", // Element that the slider will be build in
+  Vertical:true, // this Slider is Vertical! (false is default value)
+  BeforeImage: "../img/300-before.jpg", // Before Image
+  BeforeAlt: "Before image", // Before Image Alt
+  AfterImage: "../img/300-after.jpg", // After Image
+  AftereAlt: "After image", // After Image Alt
+  DragFrom:90, // Percent % of before Image
+  MaxDrag: 30, //Max drag from right or bottom if vertical
+  MinDrag:20, //Min drag from left or top if vertical
+  DragIcon: '↨', //no html, only codes
+  IconSize:10, //Icon size
+  IconColor:'#7fe980', //Icon Color
+  LineColor:'#29732a', //Line Color
+  ButtonGradient:['#13b135','#086502'], // Line Button gradient (keep same color for no gradient)
+  ButtonBorder:'#0a5003', //Line Button Border Color
+  ButtonRaduis:10, // Line Button Raduis
+  Cursor:'grab', // Cursor style on button hover, for more: https://developer.mozilla.org/fr/docs/Web/CSS/cursor
+  Buttons:true, // Show before and after buttons ?
+  ButtonsText:{ //After Before Buttons Texts
+    after:'Edited',
+    before:'Green Screen'
+  },
+  Border:{ // Border properties
+          color:'green',
+          width:5, // 0 for no border
+          style:'solid'
+         },
+  callbackBefore : () => alert('before build'), //Callback Before building slider
+  callbackAfter : () => alert('after build') //Callback After building slider
+});
+
+// .class
+beforeEffectslider({
+  Selector: ".dogs",
+  BeforeImage:"../img/dogs-before.jpg",
+  AfterImage:"../img/dogs-after.jpg",
+    ButtonsText:{ //After Before Buttons Texts
+      after:'Photoshop',
+        before:'Camera'
+    },
+});
+
+</script>
+</html>
