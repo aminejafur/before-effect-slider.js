@@ -1,7 +1,7 @@
 # before-effect-slider.js
 **Build your fully customizable responsive before & after comparison slider.**
 
-## Vartical
+## Vertical
 ![](https://github.com/aminejafur/before-effect-slider.js/blob/master/gifs/300-green-screen.gif)
 ## Horizontal
 ![](https://github.com/aminejafur/before-effect-slider.js/blob/master/gifs/dogs-photoshop.gif)
